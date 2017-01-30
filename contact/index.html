@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>About Us</title>
+	<title>Contact Us</title>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -23,35 +23,30 @@
       </a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-       <a href="../about/index.html"><button type="button" class="btn btn-link navbar-btn">about</button></a>
+      <a href="../about/index.html"><button type="button" class="btn btn-link navbar-btn">about</button></a>
       <a href="../contact/index.html"><button type="button" class="btn btn-link navbar-btn">contact</button></a>
     </ul>
   </div>
 </nav>
-<div class="about-content">
-  <p>
-    Well hi.
-  </p>
-
-  <p>
-    We are Leftfield. 
-  </p>
-
-  <p>
-    We are a small group of creatives in Portland, <span style="text-transform: uppercase;">OR</span> who came together to make great web content for interesting clients. 
-  </p>
-
-  <p>
-    We want to create what you dream about. Let's get some coffee/ beer and talk about the future.
-  </p>
-
-  <p>
-    - peace
-  </p>
-
-  <p>
-    <a href="mailto:#"><img src="http://i.imgur.com/EpxtDgr.png"></a>
-  </p>
+<div class="form-submit">
+  <form method="POST" action="http://formspree.io/lindsaymah3r@gmail.com">
+  Name: <br>
+  <input type="text" name="name" >
+  Email:<br>
+  <input type="email" name="email" placeholder="Email">
+  <br>
+  <br>
+  Phone Number:
+  <br>
+   <input type="tel" name="quantity" placeholder="Phone Number *no spaces*">
+   <br>
+   <br>
+   Message: 
+   <br>
+  <textarea name="message" placeholder="Your message"></textarea>
+  <br>
+  <button class="btn btn-danger" type="submit">Send!</button>
+</form>
 
 </div>
 </body>

@@ -61,3 +61,20 @@ p {
     padding-top: 70px;
 }
 
+.form-submit {
+  font-family: Helvetica, Arial, sans-serif;
+   color: #fff;
+   font-size: 16px; 
+   font-weight: lighter;
+
+}
+
+.btn-danger {
+  background-color: #eb1351;
+  width: 150px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 5px;
+
+}
+
