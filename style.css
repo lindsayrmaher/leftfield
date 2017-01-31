@@ -61,20 +61,67 @@ p {
     padding-top: 70px;
 }
 
+input {
+  border-radius: 4px;
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border:none;
+  color: #141414;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    color: #141414;
+}
+
 .form-submit {
   font-family: Helvetica, Arial, sans-serif;
    color: #fff;
-   font-size: 16px; 
+   font-size: 14px; 
    font-weight: lighter;
+   width: 70%;
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 
 }
 
-.btn-danger {
-  background-color: #eb1351;
-  width: 150px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  padding: 5px;
+#grouped {
+  padding: 25px 15px 15px 0px;
+}
 
+.form-table-holder {
+  padding-left: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#submit-button {
+  background-color: #141414;
+  color: #eb1351;
+  width: 150px;
+  height: 60px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: 2px solid #eb1351;
+  border-radius: 6px;
+  letter-spacing: 1.5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+
+}
+
+#submit-button:hover {
+    background-color: #eb1351;
+    color: white;
 }
 

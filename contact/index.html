@@ -28,24 +28,44 @@
     </ul>
   </div>
 </nav>
-<div class="form-submit">
+<div class="form-table-holder">
   <form method="POST" action="http://formspree.io/lindsaymah3r@gmail.com">
-  Name: <br>
-  <input type="text" name="name" >
-  Email:<br>
-  <input type="email" name="email" placeholder="Email">
-  <br>
-  <br>
-  Phone Number:
-  <br>
-   <input type="tel" name="quantity" placeholder="Phone Number *no spaces*">
-   <br>
-   <br>
-   Message: 
-   <br>
-  <textarea name="message" placeholder="Your message"></textarea>
-  <br>
-  <button class="btn btn-danger" type="submit">Send!</button>
+    <table class="form-submit">
+      <tr>
+        <td>
+          Name
+        </td>
+        <td>
+          Email
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" name="name" >
+        </td>
+        <td>
+        <input type="email" name="email" >
+        </td>
+      </tr>
+      <tr>
+        <td id="grouped" colspan="2">
+          Phone Number
+          <br>
+          <input type="tel" name="quantity" placeholder="*no spaces*">
+        </td>
+      </tr>
+      <tr>
+        <td id="grouped" colspan="2">
+          Message
+          <textarea name="message" ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="submit-button" type="submit">Send!</button>
+        </td>
+      </tr>
+  </table>
 </form>
 
 </div>
