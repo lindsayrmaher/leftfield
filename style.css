@@ -1,5 +1,6 @@
 body {
     background-color: #141414;
+    padding-top: 200px;
 }
 
 .jumbotron h1 {
@@ -28,8 +29,8 @@ nav img {
     height: 100%;
 }
 
-button {
-    font-family: "Times New Roman", serif;
+nav img:hover {
+  opacity: 0.7;
 }
 
 .navbar a {
@@ -45,6 +46,13 @@ button {
     font-family: "Times New Roman", serif;
     font-size: 24px;
     padding-bottom: 0;
+    color: #333;
+
+}
+
+.navbar button:hover {
+  color: #eb1351 !important;
+  text-decoration: none;
 
 }
 
@@ -123,5 +131,37 @@ textarea {
 #submit-button:hover {
     background-color: #eb1351;
     color: white;
+}
+
+
+
+.easeIn {
+  -webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  -webkit-animation-delay: 1.5s; /* Safari 4.0 - 8.0 */
+    animation-delay: 1.5s;
+}
+
+.delay {
+  -webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
+    animation-delay: 5s;
+}
+.fadeInUp {
+  -webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
+}
+
+#contact-link {
+   width: 77px;
+   height: 57px;
+}
+
+#contact-link:hover {
+   content: url('./img/left-field-envelope-inverted.png');
+    width: 77px;
+   height: 57px;
+}
+
+col-xs-6 {
+  padding: none;
 }
 

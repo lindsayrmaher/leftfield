@@ -12,29 +12,37 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<!-- Animation.css Stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-	<nav class="navbar navbar-default">
+<body class="animated fadeIn">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" id="logo-anchor" href="index.html">
-        <img alt="Brand" src="img/leftFIELD_navbar_logo.png">
-      </a>
+    <div class="row">
+    	<nav class="navbar navbar-default navbar-fixed-top">
+          <div class="navbar-header col-xs-6">
+            <a class="navbar-brand" id="logo-anchor" href="index.html">
+              <img class="animated fadeIn easeIn" alt="Brand" src="img/leftFIELD_navbar_logo.png">
+            </a>
+          </div>
+          <div class="col-xs-6">
+            <ul class="nav navbar-nav navbar-right">
+            	<a href="about/index.html"><button type="button" class="btn btn-link navbar-btn">about</button></a>
+              <a href="contact/index.html"><button type="button" class="btn btn-link navbar-btn">contact</button></a>
+            </ul>
+          </div>
+      </nav>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-    	<a href="about/index.html"><button type="button" class="btn btn-link navbar-btn">about</button></a>
-      <a href="contact/index.html"><button type="button" class="btn btn-link navbar-btn">contact</button></a>
-    </ul>
+    <div class="row">
+      <div class="jumbotron col-xs-12">
+  	     <h1>Hello!
+  	       <br>
+  	       <br>
+  	       We can help you <br> make dope websites. <a class="animated fadeIn delay" href="contact/index.html"><img id="contact-link" src="http://i.imgur.com/EpxtDgr.png"></a>
+  	     </h1>
+      </div>
+    </div>
   </div>
-</nav>
-<div class="jumbotron">
-	<h1>Hello!
-	  <br>
-	  <br>
-	  We can help you <br> make dope websites. <a href="contact/index.html"><img src="http://i.imgur.com/EpxtDgr.png"></a>
-	</h1>
-
-</div>
 </body>
 </html>
