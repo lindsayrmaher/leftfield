@@ -1,3 +1,38 @@
+@media screen and (max-width:680px) {
+  .navbar-right button {display: none;}
+  .navbar-right button.hamburger {
+    float: right;
+    display: inline-block;
+  }
+  .navbar {
+    padding-left: 0px !important;
+    padding-right: 0px;
+  }
+  table, td, tr {
+  display: block !important;
+}
+  .jumbotron, .form-table-holder {
+    padding-left: 20px !important;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .navbar-right.responsive {position: relative;}
+  .navbar-right.responsive button.hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar-right.responsive button {
+    float: none;
+    display: inline;
+  }
+  .navbar-right.responsive button a {
+    display: block;
+    text-align: left;
+  }
+}
+
 body {
     background-color: #141414;
     padding-top: 200px;
@@ -54,6 +89,15 @@ nav img:hover {
   color: #eb1351 !important;
   text-decoration: none;
 
+}
+
+.navbar button:focus {
+  outline:0 !important;
+
+}
+
+.hamburger {
+  display: none;
 }
 
 p {
@@ -156,7 +200,7 @@ textarea {
 }
 
 #contact-link:hover {
-   content: url('./img/left-field-envelope-inverted.png');
+   content: url('./img/left-field-envelope-inverted-blk.png');
     width: 77px;
    height: 57px;
 }

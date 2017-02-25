@@ -15,7 +15,11 @@
 <!-- Animation.css Stylesheet -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+<!-- Hamburger Stylesheet -->
+<link href="hamburgers.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body class="animated fadeIn">
   <div class="container-fluid">
@@ -27,9 +31,15 @@
             </a>
           </div>
           <div class="col-xs-6">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" id="myNavbar">
             	<a href="about/index.html"><button type="button" class="btn btn-link navbar-btn">about</button></a>
               <a href="contact/index.html"><button type="button" class="btn btn-link navbar-btn">contact</button></a>
+              <a href="javascript:void(0);" onclick="myFunction()"> <button class="hamburger hamburger--squeeze" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </a>            
             </ul>
           </div>
       </nav>
@@ -44,5 +54,39 @@
       </div>
     </div>
   </div>
+  <script>
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    console.log("hamburgerisrunning")
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+   
+  });
+
+  function myFunction() {
+    console.log("myFunctionexecuted")
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
+<!-- <script>
+function myFunction() {
+    console.log("myFunctionexecuted")
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>  -->
 </body>
 </html>
